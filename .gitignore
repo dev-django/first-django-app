@@ -1,0 +1,5 @@
+# Pycharm
+.idea/
+
+# local db
+db.sqlite3
