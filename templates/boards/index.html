@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -33,7 +33,9 @@
             {% for post in posts %}
                 <tr>
                     <td>{{ post.id }}</td>
-                    <td>{{ post.title }}</td>
+                    <td>
+                        <a href="{% url 'boards:detail' post.id %}">{{ post.title }}</a>
+                    </td>
                     <td>{{ post.like_count }}</td>
                     <td>{{ post.pub_date }}</td>
                 </tr>
